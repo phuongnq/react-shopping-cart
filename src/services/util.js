@@ -7,6 +7,15 @@ export const formatPrice = (x, currency) => {
   }
 };
 
-export const productsAPI =
-  'https://react-shopping-cart-67954.firebaseio.com/products.json';
-// export const productsAPI = "http://localhost:8001/api/products";
+export const getCookie = (cName) => {
+  const name = cName + '=';
+  const cDecoded = decodeURIComponent(document.cookie);
+  const cArr = cDecoded.split('; ');
+  let res;
+  cArr.forEach(val => {
+    if (val.indexOf(name) === 0) res = val.substring(name.length);
+  })
+  return res
+};
+
+export const productsAPI = "/api/products.json";

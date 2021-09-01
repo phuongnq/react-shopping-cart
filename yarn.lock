@@ -1219,6 +1219,42 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@craftercms/classes@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@craftercms/classes/-/classes-1.2.6.tgz#b16cc02dafcd739ab9799a909bf19ebee024ff80"
+  integrity sha512-FkdGz6Z9Oi9Y+xiymMZ7avDabyBpqO52TkNnYNX6pvzYA47lTTGzMSJXlUYH+8wLdJtKmiMJ+GA9BduJWO6uAg==
+  dependencies:
+    "@craftercms/models" "1.2.6"
+    "@craftercms/utils" "1.2.6"
+    url-search-params-polyfill "^5.0.0"
+
+"@craftercms/content@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@craftercms/content/-/content-1.2.6.tgz#789a51c7abee148ce6ece19d616c66da9030edbb"
+  integrity sha512-I7W+wniEIrg5MFMaWiZoeup3Absx8AlI6ekU9Z8A+IWxbLHXZRKWTfPJvGEggbuEJcJDsCAcSdJV/loaxm0JqA==
+  dependencies:
+    "@craftercms/classes" "1.2.6"
+    "@craftercms/models" "1.2.6"
+    "@craftercms/utils" "1.2.6"
+    rxjs "^6.5.4"
+
+"@craftercms/ice@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@craftercms/ice/-/ice-1.2.6.tgz#a8713b9c03cc132eff25c43ccacac356a2c284b3"
+  integrity sha512-OC8GcbXez0rBQtI+5/PFlo/FrFXomepFynkW1Zm3WoBOAWHhpLL4IJ8XJ2oicLO4+xLhECIKaCQwl4Dw/bQYKg==
+  dependencies:
+    "@craftercms/models" "1.2.6"
+
+"@craftercms/models@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@craftercms/models/-/models-1.2.6.tgz#01e0a56e80d103e6fd471e8f8cbcd0fa11df274e"
+  integrity sha512-qMK3woYYDMA676E28KIP7rvP2C4kDG3F/P98slY9QN5SmQZ83MTrMJkfYoqDWYWj3dNrETvZ7pSSSoCzy3UvFg==
+
+"@craftercms/utils@1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@craftercms/utils/-/utils-1.2.6.tgz#91f2507ccfe9788412a78cd7fa68aae4a04c21d4"
+  integrity sha512-5MzpBEEGAioo+z4QwgjXqWFKQWAUaYr2RTH+Pycqssypj4h3Ih9WUgOVNkhBFKREnHLk5mTODjiCraeuZGMbyQ==
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -13167,12 +13203,19 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^6.4.0, rxjs@^6.6.3:
+rxjs@^6.4.0, rxjs@^6.5.4, rxjs@^6.6.3:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   dependencies:
     tslib "^1.9.0"
+
+rxjs@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.3.0.tgz#39fe4f3461dc1e50be1475b2b85a0a88c1e938c6"
+  integrity sha512-p2yuGIg9S1epc3vrjKf6iVb3RCaAYjYskkO+jHIaV0IjOPlJop4UnodOoFb2xeNwlguqLYvGw1b1McillYb5Gw==
+  dependencies:
+    tslib "~2.1.0"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
@@ -14584,6 +14627,11 @@ tslib@^2.0.1, tslib@^2.0.3, tslib@^2.2.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
+tslib@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
+
 tsutils@^3.17.1, tsutils@^3.21.0:
   version "3.21.0"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.21.0.tgz#b48717d394cea6c1e096983eed58e9d61715b623"
@@ -14938,6 +14986,11 @@ url-parse@^1.4.3, url-parse@^1.5.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+url-search-params-polyfill@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/url-search-params-polyfill/-/url-search-params-polyfill-5.1.0.tgz#f0405dcc2e921bf7f5fdf8c4e616f1e8088ef31b"
+  integrity sha512-yjFY7uw2xRf9e8Mg4ZVkZwtp8dMCC4cbBkEIZiTDpuSY2WJ9+Quw0wRhxncv32qaMQwmBQT+P847rO8PrFhhDA==
 
 url@^0.11.0:
   version "0.11.0"

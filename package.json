@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craftercms/content": "^1.2.6",
+    "@craftercms/ice": "^1.2.6",
     "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "concurrently": "^6.2.1",
@@ -14,8 +16,10 @@
     "react-redux": "^7.2.4",
     "react-scripts": "^4.0.3",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "rxjs": "^7.3.0"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
