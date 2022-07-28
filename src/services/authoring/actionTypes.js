@@ -1,0 +1,1 @@
+export const UPDATE_AUTHORING = 'UPDATE_AUTHORING';
